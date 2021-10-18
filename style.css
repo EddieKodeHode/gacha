@@ -4,12 +4,24 @@
     --tert-color:#999 ;
     --dark-accent: #111;
     --light-accent: #f1f1f1;
+    --common: rgb(197, 199, 204);
+    --uncommon: rgb(133, 230, 114);
+    --rare: rgb(74, 71, 255);
+    --legendary: rgb(255, 61, 245);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
     background-color: var(--light-accent);
+    color: var(--dark-accent);
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    text-align: center; 
 }
 
 main {
@@ -17,6 +29,9 @@ main {
     width: 80vw;
 }
 
+footer {
+    font-size: 0.75rem;
+}
 /*  */
 
 .col-center {
@@ -35,3 +50,60 @@ main {
 .margin-plus {
     margin: 0.5em;
 }
+
+/*  */
+
+.win-item {
+    border: 1px solid var(--dark-accent);
+    border-radius: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+#result-2 {
+    font-size: 0.75rem;
+}
+
+#result-2 p {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+/*  */
+
+#common {
+    background-color: var(--common);
+}
+
+#uncommon {
+    background-color: var(--uncommon);
+}
+
+#rare {
+    background-color: var(--rare);
+}
+
+#legendary {
+    background-color: var(--legendary);
+}
+
+/*  */
+
+.common {
+    background-color: var(--common);
+}
+
+.uncommon {
+    background-color: var(--uncommon);
+}
+
+.rare {
+    background-color: var(--rare);
+}
+
+.legendary {
+    background-color: var(--legendary);
+}
+
+/*  */
