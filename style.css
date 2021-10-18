@@ -8,9 +8,30 @@
 
 body {
     background-color: var(--light-accent);
+    margin: 0;
+    padding: 0;
 }
 
 main {
     border: 1px solid red;
-    width: 50em;
+    width: 80vw;
+}
+
+/*  */
+
+.col-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.margin-plus {
+    margin: 0.5em;
 }
