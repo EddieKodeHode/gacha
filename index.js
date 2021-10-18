@@ -58,7 +58,7 @@ function rollItemCommon() {
 
 // UNCOMMON POOL
 function rollItemUncommon() {
-    itemRoll = randomNumber(1,2)
+    itemRoll = randomNumber(1,4)
     switch (itemRoll) {
         case 1:
         case 2:
@@ -81,7 +81,7 @@ function rollItemUncommon() {
 
 // RARE POOL
 function rollItemRare() {
-    itemRoll = randomNumber(1,4)
+    itemRoll = randomNumber(1,3)
     switch (itemRoll) {
         case 1:
         case 2:
