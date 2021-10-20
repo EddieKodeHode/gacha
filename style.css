@@ -5,9 +5,9 @@
     --dark-accent: #111;
     --light-accent: #f1f1f1;
     --common: rgb(197, 199, 204);
-    --uncommon: rgb(133, 230, 114);
-    --rare: rgb(74, 71, 255);
-    --legendary: rgb(255, 61, 245);
+    --uncommon: rgb(183, 250, 157);
+    --rare: rgb(136, 177, 255);
+    --legendary: rgb(248, 175, 255);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
