@@ -100,31 +100,15 @@ function rollItemRare() {
 
 // LEGENDARY POOL
 function rollItemLegendary() {
-    itemRoll = randomNumber(1,20)
+    itemRoll = randomNumber(1,4)
     switch (itemRoll) {
         case 1:
         case 2:
         case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-        case 9:
-        case 10:
-        case 11:
-        case 12:
-        case 13:
-        case 14:
-        case 15:
-        case 16:
-        case 17:
-        case 18:
-        case 19:
             result.innerHTML = '<div class="win-item" id="legendary"><h3>20 QP</h3><p>You won 20 Quest Points</p><p>(legendary)</p></div>'
             pastResult.innerHTML += '<p class="legendary">20 QP</p>'
             break;
-        case 20:
+        case 4:
             result.innerHTML = '<div class="win-item" id="legendary"><h3>Chameleon</h3><p>You won a Chameleon item</p><p>(legendary)</p></div>'
             pastResult.innerHTML += '<p class="legendary">Chameleon</p>'
             break;
