@@ -10,6 +10,8 @@ let itemRoll = 0
 
 let roll = 0
 
+let dialogue = 0
+
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -130,7 +132,7 @@ function rollItemLegendary() {
     alert("You won a legendary item!")
 }
 
-//
+// Shopkeeper images and paths
 const shopkeep = document.getElementById("image-goes-here")
 
 const $shopkeep1 = "url(images/shopkeep1.png)"
@@ -138,8 +140,37 @@ const $shopkeep2 = "url(images/shopkeep2.png)"
 const $shopkeep3 = "url(images/shopkeep3.png)"
 const $shopkeep4 = "url(images/shopkeep4.png)"
 
+// Shopkeeper dialogue and paths
+const shopText = document.getElementById("text-goes-here")
 
+const $banter1 = "<p>Hm.</p>"
+const $banter2 = "<p>Hello.</p>"
+const $banter3 = "<p>Why.</p>"
+const $banter4 = "<p>Huh.</p>"
 
+//shopText.innerHTML = $banter1
+
+function banter(){
+    dialogue = randomNumber(1,4)
+    switch (dialogue) {
+        case 1:
+            shopText.innerHTML = $banter1
+            break;
+        case 2:
+            shopText.innerHTML = $banter2
+            break;
+        case 3:
+            shopText.innerHTML = $banter3
+            break;
+        case 4:
+            shopText.innerHTML = $banter4
+            break;
+        default:
+            console.log("Error")
+            break;
+    }
+    
+}
 
 // result.innerHTML = '<div class="win-item" id="common"><h3>ITEMHERE</h3><p>You won a ITEM.</p><p>(common)</p></div>'
 
