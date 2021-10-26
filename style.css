@@ -138,7 +138,7 @@ footer {
     background-size: cover;
     position: relative;
     animation: bobbing;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     transition: 0.5s;
 }
@@ -146,7 +146,7 @@ footer {
 #image-goes-here:hover{
     height: 210px;
     width: 210px;
-    animation-duration: 4s;
+    animation: none;
 }
 
 @media only screen and (max-width: 799px) {
@@ -180,7 +180,7 @@ footer {
 
 @keyframes bobbing {
     0%{bottom: 0;}
-    50%{bottom: -5px; transform: rotateZ(2deg);}
+    50%{bottom: -5px;}
     100%{bottom: 0;}
 }
 
