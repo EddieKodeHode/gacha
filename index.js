@@ -2,15 +2,22 @@ const result = document.getElementById("result-1")
 
 const pastResult = document.getElementById("result-2")
 
+const rollAmount = document.getElementById("roll-amount")
+
 let rarity = 0
 
 let itemRoll = 0
+
+let roll = 0
+
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function rollRarity() {
+    roll += 1
+    rollAmount.innerText = roll
     rarity = randomNumber(1,100)
 
     if (rarity == 100) { //legendary
@@ -81,7 +88,7 @@ function rollItemUncommon() {
 
 // RARE POOL
 function rollItemRare() {
-    itemRoll = randomNumber(1,3)
+    itemRoll = randomNumber(1,4)
     switch (itemRoll) {
         case 1:
         case 2:
@@ -91,6 +98,10 @@ function rollItemRare() {
         case 3:
             result.innerHTML = '<div class="win-item" id="rare"><h3>Rare MYO</h3><p>You won a rare MYO</p><p>(rare)</p></div>'
             pastResult.innerHTML += '<p class="rare">R. MYO</p>'
+            break;
+        case 4:
+            result.innerHTML = '<div class="win-item" id="rare"><h3>Limb item</h3><p>You won an extra limb item</p><p>(rare)</p></div>'
+            pastResult.innerHTML += '<p class="rare">Limb</p>'
             break;
         default:
             console.log('error')
@@ -118,6 +129,18 @@ function rollItemLegendary() {
     }
     alert("You won a legendary item!")
 }
+
+//
+const shopkeep = document.getElementById("image-goes-here")
+
+const $shopkeep1 = "url(images/shopkeep1.png)"
+const $shopkeep2 = "url(images/shopkeep2.png)"
+const $shopkeep3 = "url(images/shopkeep3.png)"
+const $shopkeep4 = "url(images/shopkeep4.png)"
+
+
+
+
 // result.innerHTML = '<div class="win-item" id="common"><h3>ITEMHERE</h3><p>You won a ITEM.</p><p>(common)</p></div>'
 
 // pastResult.innerHTML += '<p class="common">MYO</p>'
