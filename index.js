@@ -159,10 +159,10 @@ const $shopkeep4 = "url(images/shopkeep4.png)" //surprised
 // Shopkeeper dialogue and paths
 const shopText = document.getElementById("text-goes-here")
 
-const $banter1 = "<p>Hm.</p>"
-const $banter2 = "<p>Hello.</p>"
-const $banter3 = "<p>Why.</p>"
-const $banter4 = "<p>Huh.</p>"
+const $banter1 = "<p>Hmm, you wish to talk to me? My my, I am quite the busy individual however. Maybe another time.</p>"
+const $banter2 = "<p>Did you know Pandora really loves cheesecakes? Always cheers her up.<br>...You didn't hear this from me.</p>"
+const $banter3 = "<p>Rumor has it I have a very rare item hidden away somewhere. Maybe you'll be the lucky first finder? May our lord Arengi bless you.</p>"
+const $banter4 = "<p>Someone tried to rob me once. They've ceased to be.</p>"
 
 //shopText.innerHTML = $banter1
 
@@ -175,12 +175,15 @@ function banter(){
             break;
         case 2:
             shopText.innerHTML = $banter2
+            shopkeep.style.backgroundImage = $shopkeep2
             break;
         case 3:
             shopText.innerHTML = $banter3
+            shopkeep.style.backgroundImage = $shopkeep3
             break;
         case 4:
             shopText.innerHTML = $banter4
+            shopkeep.style.backgroundImage = $shopkeep2
             break;
         default:
             console.log("Error")
