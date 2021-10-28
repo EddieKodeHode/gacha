@@ -151,23 +151,24 @@ function rollItemLegendary() {
 // Shopkeeper images and paths
 const shopkeep = document.getElementById("image-goes-here")
 
-const $shopkeep1 = "url(images/shopkeep1.png)" //happy
-const $shopkeep2 = "url(images/shopkeep2.png)" //annoye
+const $shopkeep1 = "url(images/shopkeep1.png)" //happy/blush
+const $shopkeep2 = "url(images/shopkeep2.png)" //annoye/closed eye
 const $shopkeep3 = "url(images/shopkeep3.png)" //neutral
 const $shopkeep4 = "url(images/shopkeep4.png)" //surprised
 
 // Shopkeeper dialogue and paths
 const shopText = document.getElementById("text-goes-here")
 
-const $banter1 = "<p>Hmm, you wish to talk to me? My my, I am quite the busy individual however. Maybe another time.</p>"
-const $banter2 = "<p>Did you know Pandora really loves cheesecakes? Always cheers her up.<br>...You didn't hear this from me.</p>"
+const $banter1 = "<p>Hmm, you wish to talk to me? I'm quite the busy man, maybe another time.</p>"
+const $banter2 = "<p>Did you know Pandora really loves rasberries? Always cheers her up.<br>...You didn't hear this from me.</p>"
 const $banter3 = "<p>Rumor has it I have a very rare item hidden away somewhere. Maybe you'll be the lucky first finder? May our lord Arengi bless you.</p>"
 const $banter4 = "<p>Someone tried to rob me once. They've ceased to be.</p>"
+const $banter5 = "<p>Hm? A date? Let me check my schedule...<br>Looks like I'm booked for another century, sorry.</p>"
 
 //shopText.innerHTML = $banter1
 
 function banter(){
-    dialogue = randomNumber(1,4)
+    dialogue = randomNumber(1,5)
     switch (dialogue) {
         case 1:
             shopText.innerHTML = $banter1
@@ -185,6 +186,10 @@ function banter(){
             shopText.innerHTML = $banter4
             shopkeep.style.backgroundImage = $shopkeep2
             break;
+        case 5:
+            shopText.innerHTML = $banter5
+            shopkeep.style.backgroundImage = $shopkeep1
+            break;
         default:
             console.log("Error")
             break;
@@ -195,12 +200,12 @@ function banter(){
 const $banterCommon1 = "<p>Not bad, but you could do better.</p>"
 const $banterCommon2 = "<p>Oh good, I was hoping to part with this soon.</p>"
 
-const $banterUncommon1 = "<p>Oh, that's where I left that. Guess you can keep it.</p>"
+const $banterUncommon1 = "<p>Oh, that's where I left this. Guess you can keep it.</p>"
 const $banterUncommon2 = "<p>Not a bad find.</p>"
 
 const $banterRare1 = "<p>I didn't even realize I had one of those. Congratulations, friend.</p>"
 
-const $banterLegendary1 = "<p>What? But that's... A <span class='legendary-col'>legendary</span> item! Well, you won it fair and square. It's all yours to keep.</p>"
+const $banterLegendary1 = "<p>What? But that's... A <span class='legendary-col'>legendary</span> item! Well, you won it fair and square. It's yours to keep, friend.</p>"
 
 
 

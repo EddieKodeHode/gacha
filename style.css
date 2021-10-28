@@ -1,20 +1,20 @@
 :root {
-    --main-color:#666 ;
-    --sec-color:#333 ;
-    --tert-color:#999 ;
+    --main-color:rgb(61, 61, 66) ;
+    --sec-color:rgb(28, 28, 31) ;
+    --tert-color:rgb(17, 247, 255) ;
     --dark-accent: #111;
     --light-accent: #f1f1f1;
-    --common: rgb(197, 199, 204);
-    --uncommon: rgb(183, 250, 157);
-    --rare: rgb(136, 177, 255);
-    --legendary: rgb(248, 175, 255);
+    --common: rgb(181, 184, 190);
+    --uncommon: rgb(164, 233, 136);
+    --rare: rgb(119, 182, 241);
+    --legendary: rgb(236, 154, 236);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
-    background-color: var(--light-accent);
-    color: var(--dark-accent);
+    background-color: var(--main-color);
+    color: var(--light-accent);
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
@@ -22,15 +22,18 @@ body {
 
 header {
     text-align: center; 
+    z-index: 5;
 }
 
 main {
     /* border: 1px solid red; */
     width: 80vw;
+    z-index: 5;
 }
 
 footer {
     font-size: 0.75rem;
+    z-index: 5;
 }
 /*  */
 
@@ -58,6 +61,7 @@ footer {
     border-radius: 2em;
     padding: 1em;
     text-align: center;
+    color: var(--dark-accent)
 }
 
 #result-2 {
@@ -68,6 +72,7 @@ footer {
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 0.5em;
+    color: var(--dark-accent);
 }
 
 /*  */
@@ -118,9 +123,9 @@ footer {
 }
 
 #text-goes-here{
-    color: var(--dark-accent);
+    color: var(--tert-color);
     width: 200px;
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     padding: 1em;
     border-radius: 2em;
     box-shadow: 1px 1px 0 var(--dark-accent);
@@ -157,6 +162,7 @@ footer {
         left: 0;
         bottom: 0;
         width: 0;
+        z-index: 5;
     }
     
     #text-goes-here{
