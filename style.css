@@ -56,6 +56,10 @@ footer {
 
 /*  */
 
+#update-number::after{
+    content: 'Content.';
+}
+
 .win-item {
     border: 1px solid var(--dark-accent);
     border-radius: 2em;

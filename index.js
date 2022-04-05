@@ -25,15 +25,15 @@ function rollRarity() {
         console.log('legendary');
         rollItemLegendary();
     }
-    else if (rarity >= 90) { //rare
+    else if (rarity >= 95) { //rare
         console.log('rare');
         rollItemRare();
     }
-    else if (rarity >= 60) { //uncommon
+    else if (rarity >= 70) { //uncommon
         console.log('uncommon');
         rollItemUncommon();
     }
-    else if (rarity <= 59) { //common
+    else if (rarity <= 69) { //common
         console.log('common');
         rollItemCommon();
     }
